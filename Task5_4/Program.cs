@@ -10,7 +10,7 @@
             Random rnd = new Random();
 
             int[] k = new int[n];
-            
+
             for (int i = 0; i < n; i++)
             {
                 t[i] = rnd.Next(0, 10);
@@ -25,7 +25,33 @@
                 Console.Write($"{k[i]} ");
 
             }
+            Console.WriteLine();
+            // Второй способ
+            Console.WriteLine("Второй способ");
 
+            Console.WriteLine("Прямой массив");
+            for (int i = 0; i < n; i++) //Вводится прямой массив
+            {
+                t[i] = rnd.Next(0, 10);
+
+                Console.Write($"{t[i]} ");
+
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Перевернутый массив");
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                int p = t[i];
+                t[i] = t[n - 1 - i];
+                t[n - 1 - i] = p;
+            }
+
+            for (int i = 0; i < n ; i++)
+            
+                Console.Write($"{t[i]} ");
+            
             Console.ReadKey();
         }
     }
