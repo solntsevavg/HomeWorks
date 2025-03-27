@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводится натуральное число n. Найти 1 + 1/2 + 1/3 + … + 1/n
         static void Main(string[] args)
         {
             int n = 0;

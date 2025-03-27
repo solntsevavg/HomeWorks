@@ -4,6 +4,8 @@ namespace Task3_2_4
 {
     internal class Program
     {
+        //Вводятся три числа. Вывести большее их них.
+        //Вводятся три разных числа. Вывести медиану – среднее по величине число.
         static void Main(string[] args)
         {
             Console.Write("Введите первое число: ");

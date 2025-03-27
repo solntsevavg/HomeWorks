@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Запрашивать у пользователя число до тех пор, пока он не введет число из диапазона [20; 60]
         static void Main(string[] args)
         {
             int a = 0;

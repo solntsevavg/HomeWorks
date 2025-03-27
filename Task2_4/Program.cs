@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводится четырехзначное число. Поменять местами 2-ую и 4-ую цифру.
         static void Main(string[] args)
         {
             Console.Write("Введите четырехзначное число: ");

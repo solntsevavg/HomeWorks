@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводится n. Определить количество цифр в числе
         static void Main(string[] args)
         {
             Console.Write("Введите число:");

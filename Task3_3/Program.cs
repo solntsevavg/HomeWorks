@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводятся четыре числа. Вывести большее из них.
         static void Main(string[] args)
         {
             Console.Write("Введите первое число: ");

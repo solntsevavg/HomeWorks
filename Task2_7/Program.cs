@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        //Вводятся два числа.
+        //Обменять их местами, не используя третью переменную.
         static void Main(string[] args)
         {
             Console.Write("Введите первое число: ");

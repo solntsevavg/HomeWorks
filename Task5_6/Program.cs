@@ -2,6 +2,13 @@
 {
     internal class Program
     {
+        //Сформировать двумерный массив вида
+
+        //1 0 1 0 1
+        //0 1 0 1 0
+        //1 0 1 0 1
+        //0 1 0 1 0
+        //1 0 1 0 1
         static void Main(string[] args)
         {
             const int n = 5;

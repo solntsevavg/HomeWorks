@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        //Вводятся два числа.
+        //Сравнить их и вывести правильный знак «<», «>» или «=».
         static void Main(string[] args)
         {
             Console.Write("Введите первое число: ");

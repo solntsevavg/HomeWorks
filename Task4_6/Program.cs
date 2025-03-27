@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводится n. Определить, является ли оно степенью 2-ки?
         static void Main(string[] args)
         {
             Console.Write("Введите число:");

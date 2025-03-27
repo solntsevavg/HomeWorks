@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        //Вводятся целые числа a>0, b<0.
+        //Найти a^b. Не использовать класс Math
         static void Main(string[] args)
 
         {

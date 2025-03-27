@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //Вводится натуральное число n. Найти n! Например, 6! = 1 * 2 * 3 * 4 * 5 * 6.
         static void Main(string[] args)
         {
             int n = 0;
