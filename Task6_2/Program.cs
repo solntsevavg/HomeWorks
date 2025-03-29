@@ -12,10 +12,8 @@ namespace Task6_2
             Console.Write("Введите предложение: ");
             string input = Console.ReadLine();
 
-            while (input.Contains(" "))
-            {
-                input = input.Replace(" ", "");
-            }
+            input = input.Replace(" ", "");
+
             input = input.ToLower();
 
             int n = input.Length; //Длина без пробелов
@@ -25,7 +23,7 @@ namespace Task6_2
             for (int i = 0; i < n; i++)
             {
 
-                if (input[i] != input[n - 1 - i]) 
+                if (input[i] != input[n - 1 - i])
                 {
                     f = false;
                     break;

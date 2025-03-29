@@ -37,7 +37,7 @@ namespace Task7_3
             }
             else
             {
-                for (int i = n-1; i >=0 / 2; i--) //Вывод в обратном порядке
+                for (int i = n-1; i >=0 ; i--) //Вывод в обратном порядке
                 {
                     Console.Write($"{array[i]} ");
                 }

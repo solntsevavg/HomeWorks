@@ -34,12 +34,15 @@
             string result2 = String.Format($"{n:0,0}");
             string result3 = String.Format($"{sum2:n2}");
 
-            Console.WriteLine();
+            string separator = new String('-', 50);
+
+            Console.WriteLine($"{separator}");
             Console.WriteLine($"Отчёт о продажах за {input1} {input2}");
-            Console.WriteLine();
+            Console.WriteLine($"{separator}");
             Console.WriteLine($"Общая сумма продаж: {result1} р.");
             Console.WriteLine($"Количество проданных товаров: {result2} шт.");
             Console.WriteLine($"Средняя стоимость товаров: {result3} р.");
+            Console.WriteLine($"{separator}");
 
             Console.ReadKey();
         }
