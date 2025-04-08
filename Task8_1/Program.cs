@@ -51,7 +51,7 @@ namespace Task8_1
                 f = false;
             }
 
-            if (f) //Выводит результат, если нет ошибок
+                        if (f) //Выводит результат, если нет ошибок
                 Console.WriteLine($"Результат вычислений = {result}");
 
             Console.ReadKey();

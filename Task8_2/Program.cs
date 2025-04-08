@@ -42,8 +42,7 @@
             }
             while (f == false);
 
-            if (f)
-                Console.WriteLine($"Возраст введен корректно. Введенный возраст: {age}");
+            Console.WriteLine($"Возраст введен корректно. Введенный возраст: {age}");
 
             Console.ReadKey();
         }
