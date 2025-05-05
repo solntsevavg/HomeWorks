@@ -122,8 +122,15 @@
 
             return (decimal)tax1;
         }
+        //        Удобно с помощью base вызвать аналогичный метод в родительском классе
 
-        public override void DisplayInfo() //Переопределяем вывод информацию о здании
+        //public override double CalculateTax()
+        //        {
+        //            double elevatorTax = _haveElevator ? 5000 : 0;
+        //            return base.CalculateTax() * (1 + (_floors - 1) * 0.05) + elevatorTax;
+        //        }
+
+                public override void DisplayInfo() //Переопределяем вывод информацию о здании
         {
             base.DisplayInfo(); // Вызов базового метода
             Console.WriteLine($"Количество этажей: {_floors} эт.");

@@ -33,13 +33,13 @@
                 ac2.Withdraw(200);
                 ac2.Withdraw(600);
 
-                
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ошибка: {ex.Message}");
             }
-            Console.WriteLine(  );
+            Console.WriteLine();
 
             Console.WriteLine($"Всего счетов: {BankAccount.TotalAccounts}");
 
@@ -55,8 +55,8 @@
         //Статическое поле
         public static int TotalAccounts = 0; //Общее количество созданных счетов
 
-        // Поле только для чтения(устанавливается в конструкторе)
-        public readonly int AccountNumber; // Номер счета
+        // Свойство только для чтения(устанавливается в конструкторе)
+        public int AccountNumber { get; } // Номер счета
 
         //Автосвойства
         public decimal Balance
@@ -108,7 +108,5 @@
             Console.WriteLine($"Баланс после списания: {Balance} р.");
             Console.WriteLine();
         }
-
-
     }
 }
