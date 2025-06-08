@@ -38,7 +38,7 @@ namespace Task16_1
               new Computer() { Code = "004", Mark = "Samsung", Processor = "i9", Frequency = 6, Ram = 10, Video = 6, Cost = 47500, Count = 3 },
               new Computer() { Code = "005", Mark = "Apple", Processor = "Ryzen 7", Frequency = 4.5, Ram = 4, Video = 3, Cost = 25000, Count = 21 },
               new Computer() { Code = "006", Mark = "Iru", Processor = "Ryzen 5", Frequency = 5, Ram = 6, Video = 4, Cost = 25000, Count = 13 },
-              new Computer() { Code = "007", Mark = "Noname", Processor = "Ryzen 9", Frequency = 3, Ram = 8, Video = 6, Cost = 41100, Count = 8 },
+              new Computer() { Code = "007", Mark = "Noname", Processor = "Ryzen 9", Frequency = 3, Ram = 8, Video = 6, Cost = 41100, Count = 32 },
              };
 
             //- все компьютеры с указанным процессором. Название процессора запросить у пользователя;
@@ -148,6 +148,26 @@ namespace Task16_1
                 comp.PrintInfo();
             }
 
+            //- есть ли хотя бы один компьютер в количестве не менее 30 штук?
+
+            bool hasCount = list
+                .Any(comp => comp.Count >= 30);
+            Console.WriteLine($"\nЕсть ли хотя бы один компьютер в количестве не менее 30 штук? {(hasCount ? "Да" : "Нет")}");
+
+            if (hasCount)
+            {
+                var countComp = list
+                    .Where(comp => comp.Count >= 30).ToList();
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Компьютеры в наличии (>= 30 шт):");
+                Console.ResetColor();
+
+                foreach (var comp in countComp)
+                {
+                    comp.PrintInfo();
+                }
+            }
             Console.ReadKey();
 
         }
